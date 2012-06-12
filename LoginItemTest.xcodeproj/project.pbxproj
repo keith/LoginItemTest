@@ -13,7 +13,29 @@
 		C26AC05F1587776B0010383E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C26AC05D1587776B0010383E /* Credits.rtf */; };
 		C26AC0621587776B0010383E /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C26AC0611587776B0010383E /* KSAppDelegate.m */; };
 		C26AC0651587776B0010383E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26AC0631587776B0010383E /* MainMenu.xib */; };
+		C26AC07D15877DEC0010383E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26AC04E1587776A0010383E /* Cocoa.framework */; };
+		C26AC08315877DEC0010383E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C26AC08115877DEC0010383E /* InfoPlist.strings */; };
+		C26AC08515877DEC0010383E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C26AC08415877DEC0010383E /* main.m */; };
+		C26AC08915877DEC0010383E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C26AC08715877DEC0010383E /* Credits.rtf */; };
+		C26AC08C15877DED0010383E /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C26AC08B15877DED0010383E /* KSAppDelegate.m */; };
+		C26AC08F15877DED0010383E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26AC08D15877DED0010383E /* MainMenu.xib */; };
+		C26AC09315877E180010383E /* HelperApp.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = C26AC07B15877DEC0010383E /* HelperApp.app */; };
+		C26AC09515877E2F0010383E /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26AC09415877E2F0010383E /* ServiceManagement.framework */; };
+		C2F9EBB915878D2200864248 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F9EBB815878D2200864248 /* StartAtLoginController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C26AC07115877CD70010383E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				C26AC09315877E180010383E /* HelperApp.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C26AC04A1587776A0010383E /* LoginItemTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginItemTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,14 +43,28 @@
 		C26AC0511587776A0010383E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C26AC0521587776A0010383E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C26AC0531587776A0010383E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C26AC0561587776A0010383E /* LoginItemTest-Info.plist */ = {isa = PBXFileReference; path = "LoginItemTest-Info.plist"; sourceTree = "<group>"; };
+		C26AC0561587776A0010383E /* LoginItemTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginItemTest-Info.plist"; sourceTree = "<group>"; };
 		C26AC0581587776B0010383E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C26AC05A1587776B0010383E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C26AC05C1587776B0010383E /* LoginItemTest-Prefix.pch */ = {isa = PBXFileReference; path = "LoginItemTest-Prefix.pch"; sourceTree = "<group>"; };
+		C26AC05C1587776B0010383E /* LoginItemTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoginItemTest-Prefix.pch"; sourceTree = "<group>"; };
 		C26AC05E1587776B0010383E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C26AC0601587776B0010383E /* KSAppDelegate.h */ = {isa = PBXFileReference; path = KSAppDelegate.h; sourceTree = "<group>"; };
+		C26AC0601587776B0010383E /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
 		C26AC0611587776B0010383E /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
 		C26AC0641587776B0010383E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C26AC06F158777730010383E /* LoginItemTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LoginItemTest.entitlements; sourceTree = "<group>"; };
+		C26AC07B15877DEC0010383E /* HelperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26AC08015877DEC0010383E /* HelperApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperApp-Info.plist"; sourceTree = "<group>"; };
+		C26AC08215877DEC0010383E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C26AC08415877DEC0010383E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C26AC08615877DEC0010383E /* HelperApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelperApp-Prefix.pch"; sourceTree = "<group>"; };
+		C26AC08815877DEC0010383E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C26AC08A15877DED0010383E /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
+		C26AC08B15877DED0010383E /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
+		C26AC08E15877DED0010383E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C26AC09415877E2F0010383E /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		C2F9EBB615878B9C00864248 /* HelperApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HelperApp.entitlements; sourceTree = "<group>"; };
+		C2F9EBB715878D2200864248 /* StartAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartAtLoginController.h; sourceTree = "<group>"; };
+		C2F9EBB815878D2200864248 /* StartAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartAtLoginController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +72,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26AC09515877E2F0010383E /* ServiceManagement.framework in Frameworks */,
 				C26AC04F1587776A0010383E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26AC07815877DEC0010383E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26AC07D15877DEC0010383E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +91,9 @@
 		C26AC03F1587776A0010383E = {
 			isa = PBXGroup;
 			children = (
+				C26AC09415877E2F0010383E /* ServiceManagement.framework */,
 				C26AC0541587776A0010383E /* LoginItemTest */,
+				C26AC07E15877DEC0010383E /* HelperApp */,
 				C26AC04D1587776A0010383E /* Frameworks */,
 				C26AC04B1587776A0010383E /* Products */,
 			);
@@ -56,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C26AC04A1587776A0010383E /* LoginItemTest.app */,
+				C26AC07B15877DEC0010383E /* HelperApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +130,9 @@
 		C26AC0541587776A0010383E /* LoginItemTest */ = {
 			isa = PBXGroup;
 			children = (
+				C26AC06F158777730010383E /* LoginItemTest.entitlements */,
+				C2F9EBB715878D2200864248 /* StartAtLoginController.h */,
+				C2F9EBB815878D2200864248 /* StartAtLoginController.m */,
 				C26AC0601587776B0010383E /* KSAppDelegate.h */,
 				C26AC0611587776B0010383E /* KSAppDelegate.m */,
 				C26AC0631587776B0010383E /* MainMenu.xib */,
@@ -102,6 +153,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C26AC07E15877DEC0010383E /* HelperApp */ = {
+			isa = PBXGroup;
+			children = (
+				C2F9EBB615878B9C00864248 /* HelperApp.entitlements */,
+				C26AC08A15877DED0010383E /* KSAppDelegate.h */,
+				C26AC08B15877DED0010383E /* KSAppDelegate.m */,
+				C26AC08D15877DED0010383E /* MainMenu.xib */,
+				C26AC07F15877DEC0010383E /* Supporting Files */,
+			);
+			path = HelperApp;
+			sourceTree = "<group>";
+		};
+		C26AC07F15877DEC0010383E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C26AC08015877DEC0010383E /* HelperApp-Info.plist */,
+				C26AC08115877DEC0010383E /* InfoPlist.strings */,
+				C26AC08415877DEC0010383E /* main.m */,
+				C26AC08615877DEC0010383E /* HelperApp-Prefix.pch */,
+				C26AC08715877DEC0010383E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +187,7 @@
 				C26AC0461587776A0010383E /* Sources */,
 				C26AC0471587776A0010383E /* Frameworks */,
 				C26AC0481587776A0010383E /* Resources */,
+				C26AC07115877CD70010383E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -120,6 +196,23 @@
 			name = LoginItemTest;
 			productName = LoginItemTest;
 			productReference = C26AC04A1587776A0010383E /* LoginItemTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C26AC07A15877DEC0010383E /* HelperApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C26AC09015877DED0010383E /* Build configuration list for PBXNativeTarget "HelperApp" */;
+			buildPhases = (
+				C26AC07715877DEC0010383E /* Sources */,
+				C26AC07815877DEC0010383E /* Frameworks */,
+				C26AC07915877DEC0010383E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelperApp;
+			productName = HelperApp;
+			productReference = C26AC07B15877DEC0010383E /* HelperApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				C26AC0491587776A0010383E /* LoginItemTest */,
+				C26AC07A15877DEC0010383E /* HelperApp */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +253,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C26AC07915877DEC0010383E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26AC08315877DEC0010383E /* InfoPlist.strings in Resources */,
+				C26AC08915877DEC0010383E /* Credits.rtf in Resources */,
+				C26AC08F15877DED0010383E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -168,6 +272,16 @@
 			files = (
 				C26AC05B1587776B0010383E /* main.m in Sources */,
 				C26AC0621587776B0010383E /* KSAppDelegate.m in Sources */,
+				C2F9EBB915878D2200864248 /* StartAtLoginController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26AC07715877DEC0010383E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26AC08515877DEC0010383E /* main.m in Sources */,
+				C26AC08C15877DED0010383E /* KSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +312,30 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
+		C26AC08115877DEC0010383E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C26AC08215877DEC0010383E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C26AC08715877DEC0010383E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C26AC08815877DEC0010383E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C26AC08D15877DED0010383E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C26AC08E15877DED0010383E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -207,6 +345,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -224,6 +364,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -234,6 +375,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -244,6 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -251,10 +395,13 @@
 		C26AC0691587776B0010383E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LoginItemTest/LoginItemTest.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginItemTest/LoginItemTest-Prefix.pch";
 				INFOPLIST_FILE = "LoginItemTest/LoginItemTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -262,9 +409,38 @@
 		C26AC06A1587776B0010383E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LoginItemTest/LoginItemTest.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginItemTest/LoginItemTest-Prefix.pch";
 				INFOPLIST_FILE = "LoginItemTest/LoginItemTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C26AC09115877DED0010383E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HelperApp/HelperApp.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelperApp/HelperApp-Prefix.pch";
+				INFOPLIST_FILE = "HelperApp/HelperApp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C26AC09215877DED0010383E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HelperApp/HelperApp.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelperApp/HelperApp-Prefix.pch";
+				INFOPLIST_FILE = "HelperApp/HelperApp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +465,16 @@
 				C26AC06A1587776B0010383E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C26AC09015877DED0010383E /* Build configuration list for PBXNativeTarget "HelperApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C26AC09115877DED0010383E /* Debug */,
+				C26AC09215877DED0010383E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
