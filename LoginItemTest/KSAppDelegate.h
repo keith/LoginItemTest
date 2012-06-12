@@ -10,10 +10,15 @@
 #import <ServiceManagement/ServiceManagement.h>
 #import "StartAtLoginController.h"
 
-@interface KSAppDelegate : NSObject <NSApplicationDelegate>
+@interface KSAppDelegate : NSObject {
+    IBOutlet NSButton *loginCheck;
+}
+
+//@property (nonatomic, assign) BOOL launchAtLogin;
 
 @property (assign) IBOutlet NSWindow *window;
 
+- (IBAction)checkChanged:(id)sender;
 //-(BOOL)appIsPresentInLoginItems;
 
 @end

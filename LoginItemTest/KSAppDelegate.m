@@ -12,16 +12,34 @@
 
 @synthesize window = _window;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     StartAtLoginController *loginController = [[StartAtLoginController alloc] init];
-	[loginController setBundle:[NSBundle bundleWithPath:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Contents/Library/LoginItems/HelperApp.app"]]]; // Path to helper app within main bundle. THIS PATH IS REQUIRED!
-    [loginController setStartAtLogin: YES]; 
-    
+    [loginController setBundle:[NSBundle bundleWithPath:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Contents/Library/LoginItems/HelperApp.app"]]]; // Path to helper app within main bundle. THIS PATH IS REQUIRED!
     BOOL startsAtLogin = [loginController startAtLogin];
     if (startsAtLogin) {
         NSAlert *alert = [NSAlert alertWithMessageText:@"Item registered" defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:@"Score!"];
         [alert runModal];
+    }
+}
+
+- (IBAction)checkChanged:(id)sender {
+    StartAtLoginController *loginController = [[StartAtLoginController alloc] init];
+    [loginController setBundle:[NSBundle bundleWithPath:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Contents/Library/LoginItems/HelperApp.app"]]]; // Path to helper app within main bundle. THIS PATH IS REQUIRED!
+    if ([loginCheck state]) {
+        if (![loginController startAtLogin]) {
+            [loginController setStartAtLogin: YES];
+            if (![loginController startAtLogin]) {
+                NSLog(@"Register error");
+            }
+        }
+    } else {
+        if ([loginController startAtLogin]) {
+            [loginController setStartAtLogin:NO];
+            if ([loginController startAtLogin]) {
+                NSLog(@"Error");
+            }
+        }
     }
 }
 
