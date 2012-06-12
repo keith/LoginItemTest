@@ -91,7 +91,6 @@
 		C26AC03F1587776A0010383E = {
 			isa = PBXGroup;
 			children = (
-				C26AC09415877E2F0010383E /* ServiceManagement.framework */,
 				C26AC0541587776A0010383E /* LoginItemTest */,
 				C26AC07E15877DEC0010383E /* HelperApp */,
 				C26AC04D1587776A0010383E /* Frameworks */,
@@ -112,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C26AC04E1587776A0010383E /* Cocoa.framework */,
+				C26AC09415877E2F0010383E /* ServiceManagement.framework */,
 				C26AC0501587776A0010383E /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -131,11 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				C26AC06F158777730010383E /* LoginItemTest.entitlements */,
-				C2F9EBB715878D2200864248 /* StartAtLoginController.h */,
-				C2F9EBB815878D2200864248 /* StartAtLoginController.m */,
 				C26AC0601587776B0010383E /* KSAppDelegate.h */,
 				C26AC0611587776B0010383E /* KSAppDelegate.m */,
 				C26AC0631587776B0010383E /* MainMenu.xib */,
+				C2F3626D158793070061BA58 /* LoginController */,
 				C26AC0551587776A0010383E /* Supporting Files */,
 			);
 			path = LoginItemTest;
@@ -175,6 +174,15 @@
 				C26AC08715877DEC0010383E /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C2F3626D158793070061BA58 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				C2F9EBB715878D2200864248 /* StartAtLoginController.h */,
+				C2F9EBB815878D2200864248 /* StartAtLoginController.m */,
+			);
+			name = LoginController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

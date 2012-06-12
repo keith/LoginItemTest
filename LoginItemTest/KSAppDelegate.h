@@ -7,12 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <ServiceManagement/ServiceManagement.h>
 #import "StartAtLoginController.h"
 
 @interface KSAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 
-//+ (void)startHelper;
+//-(BOOL)appIsPresentInLoginItems;
 
 @end
