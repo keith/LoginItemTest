@@ -16,12 +16,12 @@
                            stringByDeletingLastPathComponent]
                            stringByDeletingLastPathComponent]
                          stringByDeletingLastPathComponent]
-                         stringByDeletingLastPathComponent]; 
-    NSString *binaryPath = [[NSBundle bundleWithPath:appPath] executablePath];
-    [[NSWorkspace sharedWorkspace] launchApplication:binaryPath];
+                         stringByDeletingLastPathComponent]; // Removes path down to /Applications/Great.app
+    NSString *binaryPath = [[NSBundle bundleWithPath:appPath] executablePath]; // Uses string with bundle binary executable
+    [[NSWorkspace sharedWorkspace] launchApplication:binaryPath]; // Launches binary
 //        NSAlert *alert = [NSAlert alertWithMessageText:binaryPath defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:@"hi"];
-//        [alert runModal];
-    [NSApp terminate:nil];
+//        [alert runModal]; // Use this NSAlert if your helper does not automatically your main application to see what path it's trying to open.
+    [NSApp terminate:nil]; // Required to kill helper app
 }
 
 @end
