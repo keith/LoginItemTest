@@ -19,8 +19,8 @@
 		C26AC08915877DEC0010383E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C26AC08715877DEC0010383E /* Credits.rtf */; };
 		C26AC08C15877DED0010383E /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C26AC08B15877DED0010383E /* KSAppDelegate.m */; };
 		C26AC08F15877DED0010383E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26AC08D15877DED0010383E /* MainMenu.xib */; };
-		C26AC09315877E180010383E /* HelperApp.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = C26AC07B15877DEC0010383E /* HelperApp.app */; };
 		C26AC09515877E2F0010383E /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26AC09415877E2F0010383E /* ServiceManagement.framework */; };
+		C2BDE7031587B842003BD08A /* HelperApp.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = C26AC07B15877DEC0010383E /* HelperApp.app */; };
 		C2F9EBB915878D2200864248 /* StartAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F9EBB815878D2200864248 /* StartAtLoginController.m */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				C26AC09315877E180010383E /* HelperApp.app in CopyFiles */,
+				C2BDE7031587B842003BD08A /* HelperApp.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
