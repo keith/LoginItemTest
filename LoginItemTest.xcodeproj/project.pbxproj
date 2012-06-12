@@ -40,9 +40,6 @@
 /* Begin PBXFileReference section */
 		C26AC04A1587776A0010383E /* LoginItemTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginItemTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26AC04E1587776A0010383E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		C26AC0511587776A0010383E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		C26AC0521587776A0010383E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C26AC0531587776A0010383E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C26AC0561587776A0010383E /* LoginItemTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginItemTest-Info.plist"; sourceTree = "<group>"; };
 		C26AC0581587776B0010383E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C26AC05A1587776B0010383E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,19 +109,8 @@
 			children = (
 				C26AC04E1587776A0010383E /* Cocoa.framework */,
 				C26AC09415877E2F0010383E /* ServiceManagement.framework */,
-				C26AC0501587776A0010383E /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C26AC0501587776A0010383E /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C26AC0511587776A0010383E /* AppKit.framework */,
-				C26AC0521587776A0010383E /* CoreData.framework */,
-				C26AC0531587776A0010383E /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		C26AC0541587776A0010383E /* LoginItemTest */ = {
