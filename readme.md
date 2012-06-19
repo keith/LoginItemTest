@@ -23,7 +23,7 @@ These are the settings of my project that worked perfectly with this implementat
 ### Main Application code setup
 
 1. Import ServiceManagement.framework into your main application(not your helper) and include `#import <ServiceManagement/ServiceManagement.h>` in your .h file
-2. Grab [StartAtLoginController](https://github.com/alexzielenski/StartAtLoginController) from Github. This is an easy to use class by [Alex Zielenski](https://twitter.com/#!/alexzielenski) to deal with the complications of adding, removing and querying login items
+2. Grab [StartAtLoginController](https://github.com/alexzielenski/StartAtLoginController) from Github. This is an easy to use class by [Alex Zielenski](https://twitter.com/#!/alexzielenski) to deal with the complications of adding, removing and querying login items. Import `StartAtLoginController.h` into your h file.
 3. Create whatever interface you want to for controlling this setting. *If your application automatically enables this it will be denied from the Mac App Store(per guideline #2.26)*
 4. Implement a method such as `- (IBAction)checkChanged:(id)sender` I made a simple checkbox tied to the StandardUserDefaults. (If you chose to do something else your implementation for this may vary.) I also bound the checkbox to `IBOutlet NSButton *loginCheck;` in order to determine it's state. This could also be done through `[[NSUserDefaults standardUserDefaults] boolForKey:YourKey]`
 5. Implement code similar to this in your .m file.
@@ -58,7 +58,7 @@ To do something if the login helper is enabled.
 
 Make sure to test this code vigorously with your implementation.
 
-1. Make your helper application a UIElement by navigation to HelperApp.plist located in the Supporting Files group by default. Add a line at the bottom with the Key `Application is agent (UIElement)` and `YES` as the Value *(this will suppress the application from flashing a dock icon each time the user enables launch at login) I also deleted everything except for the App Delegate in interface builder*
+1. Make your helper application a UIElement by navigating to HelperApp.plist located in the Supporting Files group by default. Add a line at the bottom with the Key `Application is agent (UIElement)` and `YES` as the Value *(this will suppress the application from flashing a dock icon each time the user enables launch at login) I also deleted everything except for the App Delegate in interface builder*
 2. Erase the default method `- (void)applicationDidFinishLaunching:(NSNotification *)aNotification` and replace it with `- (void)applicationWillFinishLaunching:(NSNotification *)aNotification`
 3. Within this method implement code similar to this.
 
