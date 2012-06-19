@@ -70,5 +70,9 @@ Make sure to test this code vigorously with your implementation.
 	This code finds your main application, determines it's binary executable(required to launch the application within the sandbox)	 opens your application, then quits
 4. That's it.
 
+### Deploy
+
+The last thing you should do when deploying your application for yourself or to the Mac App store is remove your Helper app from the Archived items. Do this by navigating to the Target of your HelperApp -> Build Settings -> Skip Install and set Yes for Release. Apple provides more information [here](http://developer.apple.com/library/ios/#documentation/ToolsLanguages/Conceptual/Xcode4UserGuide/DistApps/DistApps.html).
+
 ### Other stuff
 A special thanks to [Alex Zielenski](https://twitter.com/#!/alexzielenski) for [StartAtLoginController](https://github.com/alexzielenski/StartAtLoginController). Also [Delite Studio](http://www.delitestudio.com/2011/10/25/start-dockless-apps-at-login-with-app-sandbox-enabled/) for an article on the topic. Unfortunately it didn't include everything.
