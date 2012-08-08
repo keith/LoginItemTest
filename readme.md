@@ -16,7 +16,7 @@ These are the settings of my project that worked perfectly with this implementat
 1. Create a new project with ARC enabled
 2. Sandbox both your main application and helper application(if you haven't created a helper yet we will get to it shortly) I also enabled code signing
 3. Since this was just a test application I had no entitlements enabled for either the main application or the helper
-4. If you haven't already, create a helper app. Go to your project settings and click "Add Target" choose a Cocoa Application. Name it something such as MyAwesomeProjectHelper also with ARC enabled. (I left its "App Store Category" blank)
+4. If you haven't already, create a helper app. Go to your project settings and click "Add Target" choose a Cocoa Application. Name it something such as MyAwesomeProjectHelper also with ARC enabled. (I left its "App Store Category" blank) **Make sure to codesign the helper application just as you do to your main application**
 5. Now select the Target of your main application. Go to Build Phases -> Add Build Phase -> Add Copy Files.
 6. Change the Destination to Wrapper. Make the Subpath `Contents/Library/LoginItems` leave Copy only when installing unchecked. Drag your helper application from Products on the left into the tableview.
 
